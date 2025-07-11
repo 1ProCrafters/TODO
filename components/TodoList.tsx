@@ -87,29 +87,36 @@ export default function TodoList() {
 }
 
 const styles = StyleSheet.create({
+  // Main Container Styles
   container: {
     flex: 1,
     backgroundColor: "#E8EAED",
   },
+  // Task List Area Styles
   tasksWrapper: {
     paddingTop: 80,
     paddingHorizontal: 20,
+    backgroundColor: "#0c9fd2",
   },
+  // Section "Task" Title Styles
   sectionTitle: {
     fontSize: 24,
     fontWeight: "bold",
   },
+  // Task Items Styles (div holding all tasks)
   items: {
     marginTop: 30,
   },
+  // Input Field + Task Button Styles
   writeTaskWrapper: {
     position: "absolute",
-    bottom: 60,
+    top: 40,
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
   },
+  // Input Field Styles
   input: {
     paddingVertical: 15,
     paddingHorizontal: 15,
@@ -119,6 +126,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     width: 250,
   },
+  // Task Button Styles
   addWrapper: {
     width: 60,
     height: 60,
